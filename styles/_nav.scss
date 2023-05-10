@@ -1,0 +1,149 @@
+.desktop-nav {
+  .toggleNav {
+    display: none;
+  }
+}
+
+
+
+header {
+  position: relative;
+  height: 60px;
+
+  .toggleNav {
+    position: relative;
+    width: 3px;
+    height: 45px;
+    border: none;
+    order: 2;
+    margin-left: auto;
+    z-index: 9999;
+    background-color: transparent;
+    padding: 1rem;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: black;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 12px;
+      }
+      
+      &:nth-child(2),&:nth-child(3) {
+        top: 20px;
+      }
+      
+      &:nth-child(4) {
+        top: 28px;
+      }
+      
+      &.open:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+        background-color: blue;
+      }
+      
+      &.open:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      
+      &.open:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      
+      &.open:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        opacity: 0;
+        left: 50%;
+      }
+    }
+    
+    &:hover {
+      cursor: pointer;
+      color: darken(red, 10%);
+    }
+  }
+
+  .nav {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    padding-top: 60px;
+    width: 60%;
+    text-align: center;
+    height: 100vh;
+    box-shadow: 2px 2px 12px black;
+    z-index: 999;
+
+    li {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: green;
+    }
+
+
+    &--closed {
+      transition: right 0.3s ease-in-out;
+    }
+
+
+    &--open {
+      transition: right 0.3s ease-in-out;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+
+    .nav {
+      background-color: transparent;
+      position: relative;
+      padding-top: 0;
+      top: 0;
+      right: 0%;
+      width: fit-content;
+      text-align: center;
+      margin-left: auto;
+      transition: right 0.3s ease-in-out;
+      height: 100%;
+      transition: none;
+      box-shadow: none;
+
+      ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+
+        li {
+          margin-bottom: 0;
+          text-align: center;
+        }
+        
+        li > a {
+          margin: 0 2rem;
+        }
+      }
+    }
+  }
+}

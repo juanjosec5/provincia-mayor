@@ -1,0 +1,91 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set default font size and family */
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+/* Set default line height */
+body,
+button,
+input,
+select,
+textarea {
+  line-height: 1.5;
+}
+
+/* Remove border on images */
+img {
+  border-style: none;
+}
+
+/* Reset form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove focus outline for non-keyboard users */
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Remove text decoration on links */
+a {
+  text-decoration: none;
+}
+
+/* Remove underline on links on hover */
+a:hover {
+  text-decoration: none;
+}
+
+/* Set default background color to white */
+
+html, body {
+  overflow-x: hidden;
+}

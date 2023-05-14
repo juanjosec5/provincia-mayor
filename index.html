@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Provincia Mayor</title>
   </head>
   <body class="preload">
     <header>
@@ -18,9 +18,7 @@
       <div class="logo">logo</div>
       <nav class="nav nav--closed">
         <ul aria-expanded="false" class="nav__list">
-          <li><a href="#" class="nav__link">link</a></li>
-          <li><a href="#" class="nav__link">link</a></li>
-          <li><a href="#" class="nav__link">link</a></li>
+          <!-- Links generated in nav.js -->
         </ul>
       </nav>
     </div>
@@ -29,71 +27,36 @@
       <section class="hero">
         <div class="wrapper">
           <div class="hero__intro">
-            <h1>h1 title bla bla</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nesciunt praesentium fugit quidem sed molestiae repudiandae laudantium architecto aut! Possimus porro </p>
+            <h1></h1>
+            <p></p>
+            <a href="#contact">test</a>
           </div>
-          <div class="hero__image">
-            <img src="http://placekitten.com/600/600" alt="">
-          </div>
+          <picture class="hero__image">
+            <source 
+              srcset="http://placekitten.com/600/600"
+              media="(min-width: 600px)"
+              width="600"
+              height="600">
+
+            <img src="http://placekitten.com/250/250"
+              width="300"
+              height="300"
+              alt="">
+          </picture>
         </div>
       </section>
-      <section class="features">
+      <section id="features" class="features">
+        <h2>Nuestros servicios</h2>
         <div class="wrapper">
-          <article class="feature-card">
-            <header class="feature-card__title">
-              <img src="http://placekitten.com/80/80" alt="">
-              <h3>card title</h3>
-            </header>
-              <div class="feature-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!
-              </div>
-          </article>
-          <article class="feature-card">
-            <header class="feature-card__title">
-              <img src="http://placekitten.com/80/80" alt="">
-              <h3>card title</h3>
-            </header>
-              <div class="feature-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!
-              </div>
-          </article>
-          <article class="feature-card">
-            <header class="feature-card__title">
-              <img src="http://placekitten.com/80/80" alt="">
-              <h3>card title</h3>
-            </header>
-              <div class="feature-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!
-              </div>
-          </article>
-          <article class="feature-card">
-            <header class="feature-card__title">
-              <img src="http://placekitten.com/80/80" alt="">
-              <h3>card title</h3>
-            </header>
-              <div class="feature-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!
-              </div>
-          </article>
-          <article class="feature-card">
-            <header class="feature-card__title">
-              <img src="http://placekitten.com/80/80" alt="">
-              <h3>card title</h3>
-            </header>
-              <div class="feature-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!
-              </div>
-          </article>
-          <article class="feature-card">
-            <header class="feature-card__title">
-              <img src="http://placekitten.com/80/80" alt="">
-              <h3>card title</h3>
-            </header>
-              <div class="feature-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!
-              </div>
-          </article>
+          <!-- Being generated in services.js -->
         </div>
       </section>
-      <section class="benefits">
+      <section id="benefits" class="benefits">
+        <h2>Nuestra empresa</h2>
         <article class="benefit">
           <div class="benefit__text">
             <h3>Hogar Cálido</h3>
-            <p>En [Nombre de la Compañía], nuestro objetivo es crear un hogar cálido y acogedor para los adultos mayores. Nos esforzamos por proporcionar un entorno en el que se sientan amados, seguros y felices. Nuestro equipo dedicado se encarga de brindar una atención personalizada, así como de liderar actividades estimulantes que promueven la interacción social y el bienestar emocional. Nos enorgullece crear una atmósfera familiar donde cada residente se sienta valorado y cuidado. Confíe en nosotros para ofrecer un hogar cálido donde sus seres queridos puedan disfrutar de una vida plena y enriquecedora.</p>
+            <p>En [Nombre de la Compañía], creamos un hogar cálido y acogedor para los adultos mayores. Nuestro equipo dedicado ofrece atención personalizada y lidera actividades estimulantes que promueven la interacción social y el bienestar emocional. Nos enorgullece crear una atmósfera familiar donde cada residente se sienta valorado y cuidado. Confíe en nosotros para un hogar cálido donde sus seres queridos puedan disfrutar de una vida plena y enriquecedora.</p>
           </div>
           <div class="benefit__image">
             <img src="http://placekitten.com/400/400" alt="">
@@ -102,13 +65,66 @@
         <article class="benefit benefit--reverse">
           <div class="benefit__text">
             <h3>Cuidado Experto</h3>
-            <p>En [Nombre de la Compañía], contamos con un equipo de expertos comprometidos con el cuidado integral de los adultos mayores. Nuestros profesionales altamente capacitados y con amplia experiencia se dedican a brindar un cuidado experto que abarca aspectos físicos, emocionales y sociales. Desde la administración adecuada de medicamentos hasta la atención personalizada en actividades diarias, nos aseguramos de que cada residente reciba una atención de calidad y adaptada a sus necesidades individuales. Confíe en nosotros para ofrecer el cuidado experto que sus seres queridos merecen.</p>
+            <p>En [Nombre de la Compañía], ofrecemos cuidado experto para los adultos mayores. Nuestro equipo altamente capacitado proporciona atención integral, cubriendo aspectos físicos, emocionales y sociales. Desde la administración de medicamentos hasta la asistencia en actividades diarias, nos aseguramos de que cada residente reciba una atención de calidad adaptada a sus necesidades individuales. Confíe en nosotros para el cuidado experto que sus seres queridos merecen.</p>
           </div>
           <div class="benefit__image">
             <img src="http://placekitten.com/400/400" alt="">
           </div>
         </article>
       </section>
+      <section id="gallery" class="gallery">
+        <h2>Nuestras fotos</h2>
+        <div class="gallery__images">
+          <a data-fslightbox href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="http://placekitten.com/80/80" alt="Image">
+          </a>
+          <a data-fslightbox href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="http://placekitten.com/80/80" alt="Image">
+          </a>
+          <a data-fslightbox href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="http://placekitten.com/80/80" alt="Image">
+          </a>
+          <a data-fslightbox href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="http://placekitten.com/80/80" alt="Image">
+          </a>
+          <a data-fslightbox href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="http://placekitten.com/80/80" alt="Image">
+          </a>
+      </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2>contact</h2>
+        <form class="contact-form"
+          action="https://formspree.io/f/xeqwdkrg"
+          method="POST">
+          <label for="name">
+            <small>Nombre:</small> 
+          </label>
+          <input type="name" id="name" name="name" required>
+
+          <label for="email">
+            <small>Email:</small>
+          </label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="number">
+            <small>Number:</small>
+          </label>
+          <input type="tel" id="number" name="number" required>
+
+          <label for="message">
+            <small>Message:</small>
+          </label>
+          <textarea id="message" name="message" rows="4" cols="50">
+          </textarea>
+
+          <button type="submit">Enviar</button>
+          <p id="my-form-status"></p>
+        </form>
+      </section>
+      <footer>
+        footer
+      </footer>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

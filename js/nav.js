@@ -1,7 +1,23 @@
+import pageData from '../data/data.js';
+
+const data = pageData.body.nav;
 const toggleNav = document.querySelector('.toggleNav');
 const burgerSpans = toggleNav.querySelectorAll('span')
 const nav = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav__link');
+const navList = document.querySelector('.nav__list');
+
+data.links.forEach((link) => {
+  const listItem = document.createElement('li');
+  const linkContent = `<a href="${link.href}" class="nav__link">${link.text}</a>`;
+
+  listItem.innerHTML = linkContent;
+
+  navList.appendChild(listItem);
+});
+
+
+
 
 // Set the initial tabindex state for the links
 navLinks.forEach((el) => el.setAttribute('tabindex', '-1'));

@@ -8,8 +8,9 @@
     gap: 2rem;
 
     .feature-card {
+      position: relative;
       border: 1px solid blue;
-      min-width: 280px;
+      flex: 0 1 280px;
       padding: 1rem;
     
 
@@ -40,8 +41,6 @@
           justify-content: center;
           margin-bottom: 2rem;
         }
-
-        &__text {}
       }
     }
   }

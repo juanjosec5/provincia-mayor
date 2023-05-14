@@ -4,11 +4,15 @@
   }
 }
 
-
+header:has(.toggleNav) {
+  position: sticky;
+  top: 0;
+}
 
 header {
-  position: relative;
   height: 60px;
+  z-index: 999;
+  background-color: #fff;
 
   .toggleNav {
     position: relative;

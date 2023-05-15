@@ -1,6 +1,10 @@
+.hero {
+
+}
+
 .hero .wrapper {
-  border: 1px solid red;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -17,6 +21,7 @@
     h1 {
       text-align: left;
       margin-bottom: 1rem;
+      font-size: 2.5rem;
     }
 
     p {
@@ -27,7 +32,7 @@
       border: none;
       padding: 1rem 1.5rem;
       border-radius: 8px;
-      background-color: green;
+      background-color: #1E4F40;;
       color: white;
       font-weight: bold;
       margin: 0 auto;
@@ -62,7 +67,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) { 
+@media only screen and (min-width: 780px) { 
   .hero {
     $hero: &;
 
@@ -71,7 +76,7 @@
       #{$hero}__intro {
         flex: 1 0 40%;
         order: 1;
-        background-color: #fff;
+        background-color: transparent;
         margin-right: 2rem;
         max-width: 450px;
         margin-top: 0;

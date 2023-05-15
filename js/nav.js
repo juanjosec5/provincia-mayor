@@ -39,7 +39,7 @@ function loadTransitions() {
 }
 
 function loadClasses() {
-  if (window.innerWidth > 600) {
+  if (window.innerWidth > 780) {
     window.document.body.classList.add('desktop-nav');
   } else {
     window.document.body.removeAttribute('class');
@@ -81,7 +81,7 @@ function toggleMenu() {
  * Handle the resizing of the window and toggle the navigation state based on the width of the viewport.
  */
 function handleResize() {
-  if (window.innerWidth > 600) {
+  if (window.innerWidth > 780) {
     nav.classList.remove('nav--closed');
     nav.classList.remove('nav--open');
     window.document.body.classList.add('desktop-nav');

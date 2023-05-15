@@ -1,4 +1,7 @@
 .benefits {
+  background: rgb(30,79,64);
+  background: linear-gradient(180deg, rgba(30,79,64,1) 0%, rgba(18,55,44,1) 96%);
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -6,6 +9,10 @@
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
+
+  h2 {
+    color: white;
+  }
 
   .benefit {
     margin: 2rem 0;
@@ -16,8 +23,15 @@
     gap: 2rem;
 
     &__text {
+      color: white;
       margin: 1rem 0;
       order: 2;
+
+      h3 {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: inherit;
+      }
     }
     &__image {
       order: 1;
@@ -29,7 +43,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 780px) {
   .benefits {
     .benefit {
       flex-direction: row;

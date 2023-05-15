@@ -8,46 +8,60 @@ export default {
       "links": [
         {
         "href": "#features",
-        "text": "link"
+        "text": "SERVICIOS"
         },
         {
         "href": "#benefits",
-        "text": "link 2"
+        "text": "CONÓCENOS"
         },
         {
         "href": "#gallery",
-        "text": "link 3"
-        }
+        "text": "FOTOS"
+        },
+        {
+        "href": "#contact",
+        "text": "CONTACTO"
+        },
       ]
     },
     "hero" : {
       "title": "Bienvenidos a Provincia Mayor",
       "copy": "Descubre un hogar donde el bienestar de nuestros mayores es nuestra prioridad. ¡Experimenta la calidad de vida que se merecen hoy!",
-      "cta": "cta hero"
+      "cta": "CONTÁCTANOS"
     },
-    "services": {
+    "features": {
       "title" : "Nuestros Servicios",
       "cards": [
         {
-          "icon": "http://placekitten.com/80/80",
-          "title": "card title",
-          "copy": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!"
+          "icon": "fa-house",
+          "title": "Vivienda",
+          "copy": "Habitaciones individuales con baño privado, espaciosas y cómodas, con iluminación y ventilación natural. Amplias zonas comunes y hermosos jardines."
         },
         {
-          "icon": "http://placekitten.com/80/80",
-          "title": "card title",
-          "copy": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!"
+          "icon": " fa-user-nurse",
+          "title": "Asistencia y Cuidado Personal",
+          "copy": "Asistencia en higiene personal, rutina de baño, cambio de vestuario y administración de medicamentos."
         },
         {
-          "icon": "http://placekitten.com/80/80",
-          "title": "card title",
-          "copy": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!"
+          "icon": "fa-utensils",
+          "title": "Preparación de Alimentos y Dietas",
+          "copy": "Alimentación balanceada, comidas nutritivas y deliciosas. Planificación de dietas especiales."
         },
         {
-          "icon": "http://placekitten.com/80/80",
-          "title": "card title",
-          "copy": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque alias dignissimos ab molestiae neque doloribus aliquam suscipit explicabo perferendis iusto deleniti!"
-        }
+          "icon": "fa-dice",
+          "title": "Recreación y Socialización",
+          "copy": "Actividades grupales diarias físicas, lúdicas, intelectuales y espirituales."
+        },
+        {
+          "icon": "fa-hand-sparkles",
+          "title": "Servicio de Limpieza y Lavandería",
+          "copy": "Limpieza diaria del cuarto y baño. Lavandería de vestuario y ropa de cama."
+        },
+        {
+          "icon": "fa-sun",
+          "title": "Club Día y Servicios Adicionales",
+          "copy": "Disfrute durante el día nuestra programación de actividades con el acompañamiento de personal calificado."
+        },
       ]
     }
   }

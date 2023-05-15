@@ -30,3 +30,9 @@
     border: 1px solid black;
   }
 }
+@media only screen and (min-width: 780px) {
+  .contact-form {
+    max-width: 800px;
+  }
+
+}
